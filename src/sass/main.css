@@ -1,0 +1,541 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+:root {
+  --dark: hsl(220, 14%, 4%);
+  --text-color: white;
+  --color-blue: hsl(233, 14%, 35%);
+  --color-line: rgba(121, 118, 118, 0.517);
+  --input-bg: hsl(235, 24%, 19%);
+  --border-radius: 5px;
+  --height-input: 3rem;
+  --fs-m:.5rem;
+  --fs-1: 1rem;
+  --fs-1m: 1.5rem;
+  --fs-2: 2rem;
+  --fs-2m: 2.5rem;
+  --fs-3: 3rem;
+  --fs-4: 4rem;
+  --fs-5: 5rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+}
+
+.post-rel {
+  position: relative;
+}
+
+.post-abs {
+  position: absolute;
+}
+
+z-ind1 {
+  z-index: 10;
+}
+
+z-ind2 {
+  z-index: 20;
+}
+
+z-ind3 {
+  z-index: 30;
+}
+
+z-ind4 {
+  z-index: 40;
+}
+
+z-ind5 {
+  z-index: 50;
+}
+
+z-ind6 {
+  z-index: 60;
+}
+
+z-ind7 {
+  z-index: 70;
+}
+
+z-ind8 {
+  z-index: 80;
+}
+
+z-ind9 {
+  z-index: 90;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.p-img {
+  height: 230px;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.ps-bg-f {
+  height: 100vh;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.cont-todo {
+  z-index: 100;
+  background-color: transparent;
+}
+
+.cont-todo .cont-app {
+  width: 100%;
+  padding: 0 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.cont-todo .cont-app .title {
+  width: 100%;
+  margin: 4rem 0 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.cont-todo .cont-app .title h1 {
+  width: 100%;
+  font-size: var(--fs-2);
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: var(--text-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.cont-todo .cont-app .title button {
+  background-color: transparent;
+  border: none;
+}
+
+.cont-todo .cont-app .title button img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.cont-todo .cont-app form {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  background-color: var(--input-bg);
+  border-radius: var(--border-radius);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.cont-todo .cont-app form .check-task {
+  all: unset;
+  width: 1.5rem;
+  margin-left: 1 rem;
+  aspect-ratio: 1;
+  border: 1px solid var(--color-line);
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+.cont-todo .cont-app form .input-task {
+  height: var(--height-input);
+  width: 90%;
+  padding: 0 1rem;
+  background-color: var(--input-bg);
+  border: none;
+  border-radius: var(--border-radius);
+  outline: none;
+}
+
+.cont-todo .cont-app .c-list {
+  width: 100%;
+}
+
+.cont-todo .cont-app .c-list ul {
+  list-style: none;
+  background-color: var(--input-bg);
+  border-radius: var(--border-radius);
+  -webkit-box-shadow: -2px 5px 24px 6px rgba(0, 0, 0, 0.09);
+          box-shadow: -2px 5px 24px 6px rgba(0, 0, 0, 0.09);
+}
+
+.cont-todo .cont-app .c-list ul .li-item {
+  height: 2rem;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid var(--color-line);
+  color: var(--text-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.cont-todo .cont-app .c-list ul .li-item .check-list {
+  width: 10%;
+  all: unset;
+  width: 1.5rem;
+  margin-left: 0 rem;
+  aspect-ratio: 1;
+  border: 1px solid var(--color-line);
+  border-radius: 50%;
+}
+
+.cont-todo .cont-app .c-list ul .li-item .check-list:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)) padding-box, -webkit-gradient(linear, left top, right top, from(#57ddff), to(#c058f3)) border-box;
+  background: linear-gradient(transparent, transparent) padding-box, linear-gradient(to right, #57ddff 0%, #c058f3 100%) border-box;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.cont-todo .cont-app .c-list ul .li-item .bg-check {
+  background: url(../../public/imagenes/icon-check.svg) no-repeat center, -webkit-gradient(linear, left top, right top, from(#57ddff), to(#c058f3)) !important;
+  background: url(../../public/imagenes/icon-check.svg) no-repeat center, linear-gradient(to right, #57ddff 0%, #c058f3 100%) !important;
+}
+
+.cont-todo .cont-app .c-list ul .li-item .item-task {
+  width: 90%;
+  display: block;
+  margin-left: 1rem;
+  font-size: var(--fs-1);
+  font-weight: 400;
+}
+
+.cont-todo .cont-app .c-list ul .li-item .text-decoration-line-through {
+  text-decoration: line-through;
+  color: var(--color-line);
+}
+
+.cont-todo .cont-app .c-list ul .li-item .btn-del {
+  display: block;
+}
+
+.cont-todo .cont-app .c-list ul .li-item .btn-del img {
+  width: .7rem;
+  height: .7rem;
+}
+
+.cont-todo .cont-app .c-list ul .li-foot-alert {
+  height: 2rem;
+  padding: 1rem;
+  font-size: var(--fs-1);
+  color: var(--text-color);
+}
+
+.cont-todo .cont-app .c-list ul .li-foot-info {
+  height: 2.5rem;
+  font-size: .7rem;
+  color: var(--color-line);
+}
+
+.cont-todo .cont-app .c-list ul .li-foot-info .count-items {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.cont-todo .cont-app .c-list ul .li-foot-info .count-items .clearCompleted:hover {
+  color: var(--text-color);
+}
+
+.cont-todo .cont-app .c-list ul:hover {
+  cursor: pointer;
+}
+
+.cont-todo .cont-app .c-list .d-filter {
+  height: 2rem;
+  margin-top: 1.5rem;
+  padding: 0 4rem;
+  background-color: var(--input-bg);
+  border-radius: var(--border-radius);
+  font-size: .9rem;
+  color: var(--color-line);
+  -webkit-box-shadow: -2px 5px 10px 2px rgba(0, 0, 0, 0.09);
+          box-shadow: -2px 5px 10px 2px rgba(0, 0, 0, 0.09);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.cont-todo .cont-app .c-list .d-filter .actived {
+  color: #5959ed;
+}
+
+.cont-todo .cont-app .c-list .d-filter span:hover {
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.cont-todo .cont-app .c-list .filter-screen768 {
+  width: 35%;
+  height: 2.5rem;
+  border: none;
+  font-size: .7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.cont-todo .cont-app .c-list .filter-screen768 .actived {
+  color: #5959ed;
+}
+
+.bg-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-img-dark-mobile {
+  background: url("../../public/imagenes/bg-mobile-dark.jpg");
+  background-size: cover;
+  -webkit-transition: background 1s ease-out;
+  transition: background 1s ease-out;
+}
+
+.bg-img-light-mobile {
+  background: url("../../public/imagenes/bg-mobile-light.jpg");
+  background-size: cover;
+  -webkit-transition: background 1s ease-out;
+  transition: background 1s ease-out;
+}
+
+.bg-img-dark-desktop {
+  background: url("../../public/imagenes/bg-desktop-dark.jpg");
+  background-size: cover;
+  -webkit-transition: background 1s ease-out;
+  transition: background 1s ease-out;
+}
+
+.bg-img-light-desktop {
+  background: url("../../public/imagenes/bg-desktop-light.jpg");
+  background-size: cover;
+  -webkit-transition: background 1s ease-out;
+  transition: background 1s ease-out;
+}
+
+.bg-dark-backg {
+  background-color: var(--dark);
+  -webkit-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
+}
+
+.bg-dark {
+  background-color: var(--input-bg);
+}
+
+.bg-light {
+  background-color: var(--text-color) !important;
+}
+
+.color-bg-light {
+  color: black !important;
+}
+
+.color-bg-dark {
+  color: var(--text-color) !important;
+}
+
+@media (min-width: 768px) {
+  .p-img {
+    height: 250px;
+    top: 0;
+    left: 0;
+  }
+  .cont-todo .cont-app {
+    padding: 0 25%;
+  }
+  .cont-todo .cont-app .title {
+    margin: 6rem 0 1.5rem 0;
+  }
+  .cont-todo .cont-app form {
+    margin-bottom: 1rem;
+  }
+  .cont-todo .cont-app .c-list ul .li-item {
+    height: 2.5rem;
+    padding: 2rem 1rem;
+  }
+  .cont-todo .cont-app .c-list ul .li-foot-alert {
+    height: 2.5rem;
+  }
+  .cont-todo .cont-app .c-list ul .li-foot-info {
+    height: 4rem;
+    font-size: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .cont-todo .cont-app .c-list ul .li-foot-info .count-items {
+    padding: 2rem 1rem;
+  }
+  .cont-todo .cont-app .c-list .filter-screen768 {
+    height: 4rem;
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cont-todo .cont-app {
+    padding: 0 31%;
+  }
+  .cont-todo .cont-app .c-list ul .li-item {
+    height: 2.5rem;
+    padding: 2rem 1rem;
+  }
+  .cont-todo .cont-app .c-list ul .li-foot-alert {
+    height: 2.5rem;
+  }
+  .cont-todo .cont-app .c-list ul .li-foot-info {
+    height: 4rem;
+    font-size: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .cont-todo .cont-app .c-list ul .li-foot-info .count-items {
+    padding: 2rem 1rem;
+  }
+  .cont-todo .cont-app .c-list .filter-screen768 {
+    height: 4rem;
+    font-size: .8rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

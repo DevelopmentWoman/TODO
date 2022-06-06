@@ -1,0 +1,48 @@
+$m: 0.75rem;
+$p: 0.75rem;
+
+
+@function space($var){
+    @return $var*$m; 
+}
+
+
+@for $var from 0 to 11 {
+    .mt-#{$var}{
+        margin-top: space($var);
+    }
+}
+
+
+@for $var from 0 to 11 {
+    .mb-#{$var}{
+        margin-bottom: space($var);
+    }
+}
+
+
+@for $var from 0 to 11 {
+    .ml-#{$var}{
+        margin-left: space($var);
+    }
+}
+
+@for $var from 0 to 11 {
+    .mr-#{$var}{
+        margin-right: space($var);
+    }
+}
+
+@for $var from 0 to 11 {
+    .my-#{$var}{
+        margin-top: space($var);
+        margin-bottom: space($var);
+    }
+}
+
+@for $var from 0 to 11 {
+    .mx-#{$var}{
+        margin-left: space($var);
+        margin-right: space($var);
+    }
+}

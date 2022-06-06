@@ -1,0 +1,64 @@
+
+.bg-img{
+    // background-image: url(imagenes/bg-desktop-dark.jpg);
+    // background-size:cover;
+    // height: 40vh;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.bg-img-dark-mobile{
+    background: url('../../public/imagenes/bg-mobile-dark.jpg');
+    background-size: cover;
+    transition: background 1s ease-out;
+}
+.bg-img-light-mobile{
+    background: url('../../public/imagenes/bg-mobile-light.jpg');
+    background-size: cover;
+    transition: background 1s ease-out;
+}
+
+.bg-img-dark-desktop{
+    background: url('../../public/imagenes/bg-desktop-dark.jpg');
+    background-size: cover;
+    transition: background 1s ease-out;
+}
+.bg-img-light-desktop{
+    background: url('../../public/imagenes/bg-desktop-light.jpg');
+    background-size: cover;
+    transition: background 1s ease-out;
+}
+
+.bg-dark-backg{
+    background-color: var(--dark);
+    transition: background 1s ease-in-out;
+}
+
+
+.bg-dark{
+    background-color: var(--input-bg);
+
+}
+
+
+.bg-light{
+    background-color: var(--text-color) !important;
+}
+.color-bg-light{
+    color: black !important;
+
+}
+.color-bg-dark{
+    color: var(--text-color) !important;
+}
+
+// .bg-list-dark{
+//     background-color: var(--dark);
+// }
+
+// .bg-list-light{
+//     background-color: var(--text-color);
+// }

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@mixin d-flex($var1,$var2,$var3,$var4) {
+    display: flex;
+    justify-content: $var1;
+    align-items: $var2;
+    @if $var3=='true' {
+        flex-direction: column;   
+    }@else{
+        flex-direction: row;
+    }
+    @if $var4=='true' {
+        flex-wrap: wrap;
+    }@else{
+        flex-wrap: nowrap;
+    }
+
+}
+
+@mixin prop-container($var) {
+    width: 100%;
+    @if $var=='true' {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+@mixin check($v1) {
+    all: unset;
+    width: 1.5rem;
+    margin-left: $v1 rem;
+    aspect-ratio: 1;
+    border: 1px solid var(--color-line);
+    border-radius: 50%;
+}
+
+
+
+@mixin coord-pos($var1,$var2) {
+    top: $var1;
+    left: $var2;
+}
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+
+}

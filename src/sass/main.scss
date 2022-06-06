@@ -1,0 +1,28 @@
+:root{
+    --dark: hsl(220, 14%, 4%);
+    --text-color: white;
+    --color-blue: hsl(233, 14%, 35%);
+    --color-line: rgba(121, 118, 118, 0.517);
+    --input-bg: hsl(235, 24%, 19%);
+    --border-radius: 5px;
+    --height-input: 3rem;
+    --fs-m:.5rem;
+    --fs-1: 1rem;
+    --fs-1m: 1.5rem;
+    --fs-2: 2rem;
+    --fs-2m: 2.5rem;
+    --fs-3: 3rem;
+    --fs-4: 4rem;
+    --fs-5: 5rem;
+}
+
+
+
+
+@import '_config';
+@import '_posit';
+@import '_app';
+@import '_bg';
+@import '_media';
+
+

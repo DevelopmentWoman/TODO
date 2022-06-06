@@ -1,0 +1,115 @@
+@media (min-width: 768px){
+
+
+    .p-img{
+        height: 250px;
+        @include coord-pos(0,0 )
+    }
+
+    // .ps-bg-f{
+    //     height: 70vh;
+    //     @include coord-pos( 30vh,0 )
+    // }
+.cont-todo{
+    .cont-app{
+        padding: 0 25%;
+        .title{
+            margin: 6rem 0 1.5rem 0;
+            h1{
+                // font-size: var(--fs-2m);
+       
+            }
+        
+            button{
+                img{
+                    // width: 1.7rem;
+                    // height: 1.7rem;
+                }
+            }
+        }
+
+        form{
+            margin-bottom: 1rem;
+        }
+        .c-list{
+        
+            ul{
+                .li-item{
+                    height: 2.5rem;
+                    padding: 2rem 1rem;
+                        // .btn-del{
+                        //     // width: 5%;
+                        //     display: block;
+                        //     margin-left: 4rem;
+                        //     img{
+                        //         width: 1rem;
+                        //         height: 1rem;
+                        //     }
+
+                        // }
+                    }
+                    .li-foot-alert{
+                        height: 2.5rem;
+                    }
+                    .li-foot-info{
+                        height: 4rem;
+                        font-size: 1rem;
+                        @include d-flex(space-between, center, 'false', 'false');
+                        .count-items{
+                            padding: 2rem 1rem;
+                        }
+                    }
+            }
+
+            .filter-screen768{
+                height: 4rem;
+                font-size: .8rem;
+   
+            }
+        }
+    }
+
+
+}
+}
+
+
+@media (min-width: 1200px){
+
+.cont-todo{
+    .cont-app{
+        // width: 100%;
+        padding: 0 31%;
+
+
+
+        .c-list{
+        
+            ul{
+                .li-item{
+                    height: 2.5rem;
+                    padding: 2rem 1rem;
+                    }
+                    .li-foot-alert{
+                        height: 2.5rem;
+                    }
+                    .li-foot-info{
+                        height: 4rem;
+                        font-size: 1rem;
+                        @include d-flex(space-between, center, 'false', 'false');
+                        .count-items{
+                            padding: 2rem 1rem;
+                        }
+                    }
+            }
+
+            .filter-screen768{
+                height: 4rem;
+                font-size: .8rem;
+   
+            }
+        }
+    }
+
+    }
+}

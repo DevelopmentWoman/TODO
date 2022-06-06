@@ -1,0 +1,20 @@
+$ind: 10;
+
+
+
+.post-rel{
+    position: relative;
+}
+
+.post-abs{
+    position: absolute;
+
+}
+
+
+
+@for $i from 1 to $ind{
+    z-ind#{$i}{
+        z-index: $i * $ind;
+    }
+}

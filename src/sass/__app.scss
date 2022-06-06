@@ -1,0 +1,200 @@
+.container-fluid{
+    @include prop-container('false');
+}
+
+
+.p-img{
+    height: 230px;
+    z-index: 10;
+    @include coord-pos(0,0 )
+}
+
+.ps-bg-f{
+    height: 100vh;
+    z-index: 1;
+    @include coord-pos( 0,0 )
+}
+
+.cont-todo{
+    z-index: 100;
+    background-color: transparent;
+    .cont-app{
+        width: 100%;
+        padding: 0 7%;
+        @include d-flex(center,center,'true','true');
+        flex-direction: column;
+        z-index: 1000;
+        .title{
+            width: 100%;
+            margin: 4rem 0 2rem 0;
+            @include d-flex(space-between,center,'false','false');
+            h1{
+                width: 100%;
+                font-size: var(--fs-2);
+                font-weight: 600;
+                letter-spacing: 4px;
+                color: var(--text-color);
+                @include d-flex(space-between,center,'false','false');
+        
+            }
+        
+            button{
+                background-color: transparent;
+                border: none;
+                img{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+        }
+
+        form{
+            width: 100%;
+            margin-bottom: 1.5rem;
+            background-color: var(--input-bg);
+            border-radius:  var(--border-radius);
+            @include d-flex(flex-start, center, 'false', 'false');
+
+            .check-task{
+
+                @include check(1);
+                margin-left: 1rem;
+
+            }
+            .input-task{
+                height: var(--height-input);
+                width: 90%;
+                padding: 0 1rem;
+                background-color: var(--input-bg);
+                border: none;
+                border-radius: var(--border-radius);
+                outline: none;
+            }
+        }
+        .c-list{
+            width: 100%;
+            ul{
+                list-style: none;
+                background-color: var(--input-bg);
+                border-radius: var(--border-radius);
+                box-shadow: -2px 5px 24px 6px rgba(0,0,0,0.09);
+                    .li-item{
+                        height: 2rem;
+                        padding: 1.5rem 1rem;
+                        border-bottom: 1px solid var(--color-line); 
+                        color: var(--text-color);  
+                        @include d-flex(flex-start,center,'false','false');
+                        .check-list{
+                            width: 10%;
+                            @include check(0);
+
+                            &:hover{
+                                background: linear-gradient(transparent, transparent) padding-box,
+                                linear-gradient(to right, #57ddff 0%, #c058f3 100%) border-box;
+                                border: 1px solid transparent;
+                                cursor: pointer;
+                            }
+                            
+                        }
+                        .bg-check{
+                            background: url(../../public/imagenes/icon-check.svg) no-repeat center,
+                            linear-gradient(to right, #57ddff 0%, #c058f3 100%) !important;
+                        }
+                        .item-task{
+                            width: 90%;
+                            display: block;
+                            margin-left: 1rem;
+                            font-size: var(--fs-1);
+                            font-weight: 400;
+                        }
+                        .text-decoration-line-through{
+                            text-decoration: line-through;
+                            color:  var(--color-line);
+                        }
+                        .btn-del{
+                            // width: 10%;
+                            display: block;
+                            // padding: 0 1rem;
+                            img{
+                                width: .7rem;
+                                height: .7rem;
+                            }
+
+                        }
+                    }
+                    .li-foot-alert{
+                        height: 2rem;
+                        padding: 1rem;
+                        font-size: var(--fs-1);
+                        color: var(--text-color);
+
+
+
+                    }
+                    .li-foot-info{
+                        height: 2.5rem;
+                        // padding: 1.5rem 1rem;
+                        font-size: .7rem;
+                        color: var(--color-line);
+                        .count-items{
+                            width: 100%;
+                            height: 2.5rem;
+                            padding:0 1rem;
+                            @include d-flex(space-between, center, 'false', 'false');
+                            .clearCompleted{
+                                &:hover{
+                                    color: var(--text-color);
+                                }
+        
+                            }
+                        }
+
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
+            }
+            .d-filter{
+                height: 2rem;
+                margin-top: 1.5rem;
+                padding: 0 4rem;
+                background-color: var(--input-bg);
+                border-radius: var(--border-radius);
+                font-size: .9rem;
+                color: var(--color-line);
+                box-shadow: -2px 5px 10px 2px rgba(0,0,0,0.09);
+                // justify-content: s
+                @include d-flex(space-evenly, center, 'false', 'false');
+                .actived{
+                    color: rgb(89, 89, 237);
+                }
+                span{
+                    &:hover{
+                        color: var(--text-color);
+                        cursor: pointer;
+                    }
+                }
+
+            }
+            .filter-screen768{
+                width: 35%;
+                height: 2.5rem;
+                border: none;
+                font-size: .7rem;
+
+                @include d-flex(space-between, center, 'false', 'false');
+                .actived{
+                    color: rgb(89, 89, 237);
+                }
+                // span{
+                //     &:hover{
+                //         color: var(--text-color);
+                //         cursor: pointer;
+                //     }
+                // }
+
+            }
+        }
+    }
+
+}
